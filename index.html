@@ -6,7 +6,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Car Website</title>
   <link rel="icon" type="image/x-icon" href="sample-logo.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
+    #Phone{
+      float: left;
+      position: relative;
+      left: 280px;
+      top: 8px;
+      font-size: 25px;
+    }
+    #Key{
+      float: right;
+      position: relative;
+      right: 260px;
+      top: 8px;
+      font-size: 25px;
+    }
+    #Atom{
+      float: left;
+      position: relative;
+      left: 270px;
+      top: 8px;
+      font-size: 25px;
+    }
+    #Hat{
+      float: right;
+      position: relative;
+      right: 270px;
+      top: 8px;
+      font-size: 25px;
+    }
+    #Speaker{
+      float: left;
+      position: relative;
+      left: 260px;
+      top: 8px;
+      font-size: 25px;
+    }
+    h1{
+      font-family: Roboto,sans-serif;
+    }
+    p{
+      font-family: regular,"Courier New";
+    }
     *{
       padding: unset;
       margin: unset;
@@ -17,66 +59,93 @@
       grid-template-rows: 1fr;
       grid-gap: unset;
     }
-    .Home{
-      width: 100%;
+    .Mission{
+      width: auto;
       height: auto;
-      /*background-color: red;*/
-      border: 5px solid yellow;
-      float: left;
+      background-color: aliceblue;
+      text-align: center;
+      padding-top: 200px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-bottom: 5px solid black;
+      border-top: 5px solid black;
     }
-    .Home-img{
-      width: 100%;
-      /*background-color: blue;*/
-      border: 5px solid yellow;
-      float: right;
+    .Mission-img{
+      width: auto;
+      padding: 20px;
+      background-color: aliceblue;
+      border-bottom: 5px solid black;
+      border-top: 5px solid black;
     }
     .Careers{
-      width: 100%;
-      /*background-color: red;*/
-      float: left;
+      width: auto;
+      height: auto;
+      background-color: blanchedalmond;
+      text-align: center;
+      padding-top: 200px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-bottom: 5px solid black;
     }
 
     .Careers-img{
+      padding: 20px;
+      background-color: blanchedalmond;
       width: 100%;
-      /*background-color: blue;*/
-      float: right;
+      border-bottom: 5px solid black;
     }
     .Development{
-      width: 100%;
+      width: auto;
       height: auto;
-      /*background-color: red;*/
-      float: left;
+      background-color: darkgray;
+      text-align: center;
+      padding-top: 200px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-bottom: 5px solid black;
     }
 
     .Development-img{
-      width: 100%;
-      /*background-color: blue;*/
-      float: right;
+      padding: 20px;
+      background-color: darkgray;
+      width: auto;
+      height:auto;
+      border-bottom: 5px solid black;
     }
     .Purchase{
-      width: 100%;
+      width: auto;
       height: auto;
-      /*background-color: red;*/
-      float: left;
+      background-color:paleturquoise;
+      text-align: center;
+      padding-top: 200px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-bottom: 5px solid black;
     }
 
     .Purchase-img{
+      padding: 20px;
+      background-color: paleturquoise;
       width: 100%;
-      /*background-color: blue;*/
-      float: right;
+      border-bottom: 5px solid black;
     }
     .Contact{
-      width: 100%;
+      width: auto;
       height: auto;
-      /*background-color: red;*/
+      background-color: azure;
+      text-align: center;
+      padding-top: 200px;
+      padding-left: 20px;
+      padding-right: 20px;
       float: left;
+      border-bottom: 5px solid black;
     }
 
     .Contact-img{
-      width: 100%;
-      /*background-color: blue;*/
-      float: right;
-
+      padding: 20px;
+      background-color: azure;
+      width: auto;
+      border-bottom: 5px solid black;
     }
 
     img{
@@ -88,56 +157,58 @@
 
 <body>
   <div class="grid-container">
-    <div class="Home">
-      <h1>Home</h1>
-      <p>Home</p>
+    <div class="Mission">
+      <i id="Speaker" class="fa-solid fa-bullhorn"></i>
+      <h1>Our Mission</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nihil perferendis possimus! Animi aperiam excepturi illo labore magni soluta velit? Animi, at incidunt! Delectus laudantium nobis nostrum suscipit voluptas voluptatibus!</p>
     </div>
 
-    <div class="Home-img">
+    <div class="Mission-img">
         <img alt="n/a" src="Home.jpg">
     </div>
 
-    <div class="Careers">
-      <h1>Careers</h1>
-      <p>Careers</p>
-
-    </div>
-
-
     <div class="Careers-img">
 
-        <img alt="n/a" src="Careers.jpg">
+      <img alt="n/a" src="Careers.jpg">
     </div>
 
+    <div class="Careers">
+      <i id="Hat"class="fa-solid fa-graduation-cap"></i>
+      <h1>Careers</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores delectus deleniti doloribus enim, ex, exercitationem ipsam laborum minima molestiae molestias nam natus necessitatibus nostrum porro reiciendis rem sed soluta.</p>
+    </div>
 
     <div class="Development">
+      <i id="Atom" class="fa-solid fa-atom"></i>
       <h1>Research</h1>
-      <p>Development</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus culpa cupiditate deleniti ducimus eligendi esse id, iure numquam praesentium qui rem voluptas voluptates. Doloremque eius placeat quaerat quasi suscipit.</p>
     </div>
 
     <div class="Development-img">
       <img alt="n/a" src="R&d.jpg">
     </div>
 
-      <div class="Purchase">
-        <h1>Our dealers</h1>
-        <p>Purchase</p>
-
-      </div>
-
     <div class="Purchase-img">
       <img alt="n/a" src="Purchase.jpg">
     </div>
 
+      <div class="Purchase">
+        <i id="Key"class="fa-solid fa-key"></i>
+        <h1>Our dealers</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium delectus ea, enim ex facilis fuga fugiat ipsa laboriosam necessitatibus, nobis odio odit pariatur provident quisquam sed similique sunt tenetur vero!</p>
+      </div>
+
     <div class="Contact">
+      <i id="Phone"class="fa-solid fa-phone"></i>
       <h1>Contact</h1>
-      <p>Contact</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consectetur eos ipsum quas tempora. Adipisci architecto debitis dolore doloremque ducimus ea eius excepturi minima molestiae non, nulla porro similique vitae.</p>
     </div>
 
     <div class="Contact-img">
       <img alt="n/a" src="Contact.jpg">
     </div>
   </div>
+
 
 
 
