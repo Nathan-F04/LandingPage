@@ -53,6 +53,9 @@
       padding: unset;
       margin: unset;
     }
+    html{
+      scroll-behavior: smooth;
+    }
     .grid-container{
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -152,12 +155,58 @@
       max-width: 100%;
       height: auto;
     }
+    .navbar li{
+      float:left;
+    }
+    .navbar a{
+      color:black; /*color of text on navbar*/
+      text-decoration:none;
+      padding: 15px;
+      display: block;
+      text-align: center;
+    }
+    .navbar a:hover{
+      background-color: blue;
+    }
+    .navdiv1{
+      width: auto;
+      height: auto;
+      background-color: dodgerblue;
+    }
+    .navdiv2{
+      width: auto;
+      height: auto;
+      background-color: dodgerblue;
+
+    }
+    ul {/*Had this as .navbar but didn't put background color full from left to right on screen*/
+      float:left;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
   </style>
 </head>
 
 <body>
-  <div class="grid-container">
-    <div class="Mission">
+<div class="grid-container">
+<div class="navdiv1">
+<nav class="navbar">
+  <ul>
+    <li><a href="#Mission">Mission</a></li>
+    <li><a href="#Careers">Careers</a></li>
+    <li><a href="#Research">Research</a></li>
+    <li><a href="#Purchase">Our Dealers</a></li>
+    <li><a href="#Contact">Contact</a></li>
+  </ul>
+</nav>
+</div>
+<div class="navdiv2">
+
+</div>
+
+    <div id="Mission" class="Mission">
       <i id="Speaker" class="fa-solid fa-bullhorn"></i>
       <h1>Our Mission</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nihil perferendis possimus! Animi aperiam excepturi illo labore magni soluta velit? Animi, at incidunt! Delectus laudantium nobis nostrum suscipit voluptas voluptatibus!</p>
@@ -167,7 +216,7 @@
         <img alt="n/a" src="Home.jpg">
     </div>
 
-    <div class="Careers-img">
+    <div id="Careers" class="Careers-img">
 
       <img alt="n/a" src="Careers.jpg">
     </div>
@@ -178,7 +227,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores delectus deleniti doloribus enim, ex, exercitationem ipsam laborum minima molestiae molestias nam natus necessitatibus nostrum porro reiciendis rem sed soluta.</p>
     </div>
 
-    <div class="Development">
+    <div id="Research" class="Development">
       <i id="Atom" class="fa-solid fa-atom"></i>
       <h1>Research</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus culpa cupiditate deleniti ducimus eligendi esse id, iure numquam praesentium qui rem voluptas voluptates. Doloremque eius placeat quaerat quasi suscipit.</p>
@@ -188,7 +237,7 @@
       <img alt="n/a" src="R&d.jpg">
     </div>
 
-    <div class="Purchase-img">
+    <div id="Purchase" class="Purchase-img">
       <img alt="n/a" src="Purchase.jpg">
     </div>
 
@@ -198,7 +247,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium delectus ea, enim ex facilis fuga fugiat ipsa laboriosam necessitatibus, nobis odio odit pariatur provident quisquam sed similique sunt tenetur vero!</p>
       </div>
 
-    <div class="Contact">
+    <div id="Contact" class="Contact">
       <i id="Phone"class="fa-solid fa-phone"></i>
       <h1>Contact</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consectetur eos ipsum quas tempora. Adipisci architecto debitis dolore doloremque ducimus ea eius excepturi minima molestiae non, nulla porro similique vitae.</p>
@@ -207,15 +256,6 @@
     <div class="Contact-img">
       <img alt="n/a" src="Contact.jpg">
     </div>
-  </div>
-
-
-
-
-
-
-
-
 
 </body>
 
